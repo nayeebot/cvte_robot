@@ -1,0 +1,21 @@
+<launch>
+  <!-- <include file="$(find orbbec_camera)/launch/dabai_d1.launch" /> -->
+  
+  <node name="rplidarNode"          pkg="rplidar_ros"  type="rplidarNode" output="screen">
+  <param name="serial_port"         type="string" value="/dev/ttyS4"/>  
+  <param name="serial_baudrate"     type="int"    value="1000000"/>
+  <param name="frame_id"            type="string" value="laser"/>
+  <param name="inverted"            type="bool"   value="false"/>
+  <param name="angle_compensate"    type="bool"   value="true"/>
+  <param name="scan_frequency"      type="double" value="10.0"/>
+  </node>
+
+  <node name="cvte_robot_base"   pkg="cvte_robot_base"  type="cvte_robot_base"  output="screen">
+  </node>
+
+  <node name="rosserial_python"     pkg="rosserial_python"  type="serial_node.py" output="screen">
+  <param name="port"     type="string" value="/dev/ttyS0"/>  
+  <param name="baud"     type="int"    value="2000000"/>
+  </node>
+
+</launch>

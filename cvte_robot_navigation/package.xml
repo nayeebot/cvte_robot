@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<package>
+  <name>cvte_robot_navigation</name>
+  <version>1.0.0</version>
+  <description>cvte_robot_navigation</description>
+  <maintainer email="linyufeng@cvte.com">cvte robot</maintainer>
+  <license>BSD</license>
+
+  <buildtool_depend>catkin</buildtool_depend>
+</package>

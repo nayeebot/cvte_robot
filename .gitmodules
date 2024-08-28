@@ -1,0 +1,3 @@
+[submodule "cvte_robot_bringup/rplidar_ros"]
+	path = cvte_robot_bringup/rplidar_ros
+	url = https://github.com/Slamtec/rplidar_ros.git

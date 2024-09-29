@@ -16,7 +16,7 @@ class OdomPublisher {
   }
 
   void EncodingCallback(const std_msgs::Int64MultiArray& msg) {
-    /***********全局变量***********/
+    /***********配置***********/
     const double left_wheel_diameter = 0.09;   // 左轮直径
     const double right_wheel_diameter = 0.09;  // 右轮直径
     const double wheel_distance = 0.344;       // 左右轮间距

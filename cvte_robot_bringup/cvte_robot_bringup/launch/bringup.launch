@@ -9,8 +9,8 @@
   <param name="scan_mode"           type="string" value="Standard"/>
   </node>
 
-  <node name="cvte_robot_base"   pkg="cvte_robot_base"  type="cvte_robot_base"  output="screen">
-  </node>
+  <node name="cvte_robot_base"   pkg="cvte_robot_base"  type="cvte_robot_base"  output="screen" />
+  <node name="imu_driver"   pkg="imu_driver"  type="imu_driver"  output="screen" />
 
   <node name="rosserial_python"     pkg="rosserial_python"  type="serial_node.py" output="screen">
   <param name="port"     type="string" value="/dev/ttyS0"/>  
